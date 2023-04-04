@@ -14,10 +14,12 @@ const Projects = () => {
               <div className="col-span-1 row-span-2">
                 <ProjectCard
                   title="Turbulence Model for Backward-stepping face"
-                  para1="This is a simple chatroom where the users can login using their GMAIL ID. After logging in the users can either opt to send text messages or send images to other users in the room."
-                  para2="I am currently working on it add private and group chats and to also improve the UI/UX"
-                  skills={["ANSYS FLUENT,", "MATLAB"]}
-                  repoLink="https://github.com/aritC/MSGR"
+                  para1="The flow is simulated as the nominally 2D flow over a backward-facing step. This simulation was only the case of a straight top wall.
+                   With the above conditions, the 7 different quantities were obtained for three different meshes and 3 different turbulence models; 63 plots were plotted."
+
+                   para2="All the statistical quantities in the recirculation area at five different points x/H=1,4,6,8 were compared against the driver and Seegmiller(1985) experimental data. "
+                  skills={["ANSYS FLUENT,", "MATLAB," ,"Turbulence Modeling,", "Computational Fluid Dynamics,", "SolidWorks"]}
+                  repoLink=""
                   isPortrait
                   image={image1}
                 />
@@ -25,32 +27,42 @@ const Projects = () => {
               <div className="col-span-2">
                 <div className="row-span-1">
                   <ProjectCard
-                    title="Title of Second Project"
-                    para1="Description of the second project."
-                    para2="Additional details or notes."
-                    skills={["Skill 1", "Skill 2", "Skill 3"]}
-                    repoLink="https://github.com/username/repo"
+                    title="Prognostic Analysis of Bulk Metallic Glass-based Cardiac Stent"
+                    para1="This paper has determined whether a Cu47.5Zr47.5Al5 can withstand the standard stent lifetime of 10 years or 4*10^8 cycles.
+                     For this purpose, a Palmgren-Miner damage accumulation model was adopted, and stresses were found through Fluid structural interation simulation."
+                    para2="Both the MC and FORM models calculated zero probability of failure at the factor of safety(FS) of 1 for displacement stress. MC found that at the FS of 2, the failure probability was non-zero and equal to 0.0808%."
+                    skills={["Uncertainty Quantification,", "Uncertainty Propogation,", "Sensitivity Analysis,", "Reliability Analysis,", "Monte Carlo,", "Fluid Structural Interaction(FSI),", "Fatigue Modeling"]}
+                    repoLink=""
                     image={image2}
                   />
                 </div>
                 <div className="row-span-1">
                   <ProjectCard
-                    title="Title of Third Project"
-                    para1="Description of the third project."
-                    para2="Additional details or notes."
-                    skills={["Skill 1", "Skill 2", "Skill 3"]}
-                    repoLink="https://github.com/username/repo"
+                    title="ML and DL approach in low steel alloy mechanical properties estimation"
+                    para1="This project estimated the Mechanical Properties of the low alloy steel dataset obtained from the Kaggle Website. We used machine 
+                    learning and Deep Learning Algorithms to predict the Mechanical properties such as proof strength, tensile strength, percentage Elongation, and percentage reduction in area.
+                     We trained our model using different features such as the composition (different percentages) of materials like carbon, Magnesium, Phosphorus, Sulphur, Nickel, Chromium,
+                     Molybdenum, Copper, Vanadium, Aluminum, and Nitrogen. We compared the mean square value results obtained from predicted values in the dataset for different machine learning
+                     models and tabulated them in the results section.
+                    Linear Regression, Linear Regression with scaled Features, K-Nearest Neighbors, Random Forests, and Neural Networks models were used."
+                    para2="Deep learning neural networks offered us the lowest feasible mean squared error in the above study, and we are considering this model. Furthermore, we may assert that we can more accurately forecast the mechanical
+                     characteristics of different alloys with varied compositions without actually producing and testing them."
+                    skills={["Python,", "TensorFlow,", "Machine Learning,", "Deep Learning"]}
+                    repoLink=""
                     image={image3}
                   />
                 </div>
               </div>
               <div className="col-span-3 row-span-1">
                 <ProjectCard
-                  title="Title of Fourth Project"
-                  para1="Description of the fourth project."
-                  para2="Additional details or notes."
-                  skills={["Skill 1", "Skill 2", "Skill 3"]}
-                  repoLink="https://github.com/username/repo"
+                  title="AI-enabled Interactive Threats Detection using"
+                  para1="This project was funded by U.S. DOT Pipeline and Hazardous Materials Safety Admisnistration by several ASU student. In this project, I have developed elastic - plastic FEA 
+                  model with above given specification. After Validation against the experimental data, the model was used to conduct the parametric study with interactive corrosion pits. This model gave accurate 
+                  prediction than the ASME B31G."
+                  para2="The predicted point cloud data obtained from the neural network was used to create the pipeline model with actual surface circumference and performed FEA analysis for burst pressure prediction.
+                  This is project really helped me to learn new things such as handling sparse data, data augmentation, etc"
+                  skills={["Python,", "ANSYS,", "Finite Element Analysis"]}
+                  repoLink=""
                   image={image4}
                 />
               </div>

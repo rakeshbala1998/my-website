@@ -70,7 +70,7 @@ const ProjectCard = ({
               <div className="flex justify-between text-white text-3xl font-bold mb-2">
                 <h2 className="pt-3">{title}</h2>
                 <button
-                  className="text-5xl focus:outline-none"
+                  className="text-5xl text-rose-300 absolute top-0 right-4 focus:outline-none"
                   onClick={handleCloseModal}
                 >
                   &times;
@@ -78,6 +78,7 @@ const ProjectCard = ({
               </div>
               <div className="text-white mb-4">
                 <p className="mb-2 max-h-[10rem] overflow-auto">{para1}</p>
+                <p className="mb-2 max-h-[10rem] overflow-auto">{para2}</p>
               </div>
               <div className="text-white mb-4 text-lg">
                 Skills:

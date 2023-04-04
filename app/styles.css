@@ -1,5 +1,5 @@
 .image-container {
-  position: relative;
+  position: relatve;
   perspective: 1000px;
   transition: all 0.3s ease;
 }
@@ -14,7 +14,7 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 10;
+  left: 0;
   right: 0;
   bottom: 0;
   pointer-events: none;
@@ -33,4 +33,10 @@
 .image-container:hover::before,
 .image-container:hover::after {
   transition: all 0.5s ease;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

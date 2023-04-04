@@ -36,7 +36,7 @@ const SideBar = ({ isOpen, setIsOpen }: Props) => {
       >
         <ul className=" h-2/6 flex flex-col justify-between">
           {items.map((item, i) => (
-            <li key={i} className="lg:hover:scale-110 lg:hover:translate-x-20">
+            <li key={i} className="hover:scale-110 hover:translate-x-20">
               <button onClick={() => scrollToSection(item.id)}>
                 {item.name}
               </button>

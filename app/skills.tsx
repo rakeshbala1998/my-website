@@ -6,13 +6,15 @@ const Skills = () => {
 
   useEffect(() => {
     const skills = skillsRef.current.childNodes;
+    const numSkills = skills.length;
 
-    for (let i = 0; i < skills.length; i++) {
+    for (let i = 0; i < numSkills; i++) {
       const skill = skills[i];
       if (skill.nodeType === 1) {
         skill.style.animationDelay = `${i * 0.2}s`;
       }
     }
+
   }, []);
 
   return (
@@ -23,9 +25,10 @@ const Skills = () => {
         </div>
         <div
           ref={skillsRef}
-          className="text-black text-center place-items-center justify-center grid grid-rows-auto font-semibold grid-cols-3 lg:grid-cols-5 min-content gap-5 slide-in-skills"
+          className="text-black text-center place-items-center justify-center grid grid-rows-1 font-semibold grid-cols-auto min-content gap-5 slide-in-skills"
           style={{
             gridTemplateColumns: "repeat(auto-fit, minmax(10rem, 1fr))",
+            overflow: "hidden",
           }}
         >
           <p>ANSYS</p>

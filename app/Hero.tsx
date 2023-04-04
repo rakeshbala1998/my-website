@@ -27,7 +27,7 @@ const Hero = () => {
 
   const i = useRef(0);
   const [salutation, setSalutation] = useState(salutations[0]);
-  const ogName = "RAKESH";
+  const ogName = "RAKESH BALAMURUGAN";
   const isBrowser = () => typeof window !== "undefined";
 
   const scrollToSection = () => {

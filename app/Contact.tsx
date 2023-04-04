@@ -74,7 +74,7 @@ export default function Contact() {
                 <LINKEDIN className="fill-black h-20 transition-all hover:h-24 hover:-translate-y-2" />
               </a>{" "}
               <a
-                href="https://github.com/aritC"
+                href="https://github.com/rakeshbala1998"
                 rel="noreferrer"
                 target="_blank"
               >
