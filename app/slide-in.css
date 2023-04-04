@@ -1,0 +1,18 @@
+.slide-in-skills {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: slide-in 60s linear infinite;
+}
+
+.slide-in-skills p {
+  margin-right: 20px;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

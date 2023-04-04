@@ -1,0 +1,36 @@
+.image-container {
+  position: relative;
+  perspective: 1000px;
+  transition: all 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: rotateX(-2deg) rotateY(2deg);
+  
+}
+
+.image-container::before,
+.image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.image-container::before {
+  transform: rotateY(-90deg);
+}
+
+.image-container::after {
+  transform: rotateX(90deg);
+}
+
+
+
+.image-container:hover::before,
+.image-container:hover::after {
+  transition: all 0.5s ease;
+}
