@@ -1,4 +1,4 @@
-"use client";
+
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import me from "../public/me.jpg";
@@ -77,7 +77,7 @@ const Hero = () => {
         className="text-black text-center place-items-center justify-center grid grid-rows-auto grid-cols-1 md:grid-rows-1 md:grid-cols-2 ml-auto mr-auto min-content md:w-9/12"
         id="hero"
       >
-      <div className="image-container">
+      <div className="image-container ">
         <Image
           priority
           src={me}
@@ -91,7 +91,7 @@ const Hero = () => {
               {salutation}
             </div>
             <div
-              className="md:text-[12rem] text-5xl font-bold mt-0 pt-0 font-mono"
+              className="md:text-[8rem] text-5xl font-bold mt-0 pt-0 font-mono"
               onMouseEnter={hackerEffect}
             >
               {name}

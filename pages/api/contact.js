@@ -15,7 +15,7 @@ const contact = async (req, res) => {
   try {
     await transporter.sendMail({
       from: email,
-      to: "aritportfolio@gmail.com",
+      to: "rakeshbalamurugan1998@gmail.com",
       subject: `From Portfolio ${name}`,
       html: `<p>Someone wants to get in touch</p><br>
         <p><strong>Email: </strong> ${email}</p><br>

@@ -4,11 +4,13 @@ import image1 from "../../public/turbulence_project_presentation.png"
 import image2 from "../../public/ppt_stent.png"
 import image3 from "../../public/STP proj.png"
 import image4 from "../../public/Poster_PRCI2022_V1[1].png"
+import image5 from "../../public/thesis.png"
+import image6 from "../../public/ACFD-POSTER.png"
 
 const Projects = () => {
   return (
     <div className="lg:w-screen mb-20">
-      <div className="ml-auto mr-auto min-content lg:w-8/12 justify-center text-Black p-10">
+      <div className="ml-auto mr-auto min-content  lg:w-8/12 justify-center text-Black p-10">
         <div className="text-4xl font-bold text-center mb-20">RESEARCH & PROJECTS</div>
         <div className="grid grid-cols-3 gap-5">
               <div className="col-span-1 row-span-2">
@@ -62,8 +64,28 @@ const Projects = () => {
                   para2="The predicted point cloud data obtained from the neural network was used to create the pipeline model with actual surface circumference and performed FEA analysis for burst pressure prediction.
                   This is project really helped me to learn new things such as handling sparse data, data augmentation, etc"
                   skills={["Python,", "ANSYS,", "Finite Element Analysis"]}
-                  repoLink=""
+                  repoLink="https://primis.phmsa.dot.gov/matrix/FilGet.rdm?fil=17671"
                   image={image4}
+                />
+              </div>
+              <div className="col-span-3 row-span-1">
+                <ProjectCard
+                  title="Machine Learning for Predicting Crack Initiation Sites in Additively Manfactured Titanium Alloy"
+                  para1="This research focuses on finding the crack initiation sites using data obtained from the CT scan images registered inbetween uniaxial fatigue loading."
+                  para2="The obtained CT scan images are processed to remove the noises and high quality STL files were produced."
+                  skills={["Python,", "TensorFlow,", "OpenCV,","MATLAB,","Scikit-learn,", "Finite Element Analysis," ,"Fatigue Modeling,", "Additive Manufacturing" ]}
+                  repoLink=""
+                  image={image5}
+                />
+              </div>
+              <div className="col-span-3 row-span-1">
+                <ProjectCard
+                  title="Computational Analysis of Various Flow"
+                  para1="All the above selected tasks were done to solve the various fluid problem such as Compressible flow, Incompressible flow, Internal Flow, External Flow, Multiphase Flow"
+                  para2="And also, thermal problems such as heat convection, viscous heating, and steady and transient solutions are obtained."
+                  skills={["ANSYS,", "Computational Fluid Dynamics(CFD)," ,"CFD Post Processing,","Turbulence Modeling"]}
+                  repoLink=""
+                  image={image6}
                 />
               </div>
             </div>

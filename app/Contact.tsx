@@ -60,8 +60,7 @@ export default function Contact() {
         <div className="p-10">
           <div className="text-4xl font-bold text-center mb-10">LETS TALK</div>
           <div className="text-base justify-center">
-            If you liked my portfolio and would want to work with me, then drop
-            me a message!
+            If you liked my previous research work and want to collaborate, then drop me a message!
           </div>
           <div>
             <div className="flex justify-center pt-10 h-24">

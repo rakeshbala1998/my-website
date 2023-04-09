@@ -57,7 +57,7 @@ const ProjectCard = ({
       </div>
       {showModal && (
         <div className="fixed top-0 left-0 w-full h-full z-50 overflow-auto bg-better-black bg-opacity-90">
-          <div className="mx-auto  max-w-screen-xl ">
+          <div className="mx-auto  max-w-screen-2xl ">
           <Image
             src={image}
             alt={title}

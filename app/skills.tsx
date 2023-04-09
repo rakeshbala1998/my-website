@@ -25,7 +25,7 @@ const Skills = () => {
         </div>
         <div
           ref={skillsRef}
-          className="text-black text-center place-items-center justify-center grid grid-rows-1 font-semibold grid-cols-auto min-content gap-5 slide-in-skills"
+          className="text-black text-center place-items-center  grid grid-rows-1 font-semibold grid-cols-auto min-content gap-5 slide-in-skills"
           style={{
             gridTemplateColumns: "repeat(auto-fit, minmax(10rem, 1fr))",
             overflow: "hidden",
@@ -37,12 +37,21 @@ const Skills = () => {
           <p>CATIA</p>
           <p>Hypermesh</p>
           <p>SolidWorks</p>
+          <p>ABAQUS</p>
+          <p>Finite Element Analysis</p>
+          <p>Computational Fluid Dynamics</p>
+          <p>Fluid Structural Interaction</p>
+          <p>Turbulence Modeling</p>
+          <p>Uncertainty Quantification</p>
+          <p>Uncertainty Propogation</p>
+          <p>Probabilistic Computational Mechanics</p>
           <p>Python</p>
           <p>Matlab</p>
           <p>Machine Learning </p>
           <p>Deep Learning</p>
           <p>Additive Manufacturing</p>
           <p>Fatigue and Fracture</p>
+          
         </div>
       </div>
     </div>
