@@ -1,7 +1,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import me from "../public/me.jpg";
+import me from "../public/hero.jpg";
 import "./styles.css";
 
 
