@@ -1,23 +1,43 @@
-.slide-container {
+#scroll-container {
   width: 100%;
   overflow: hidden;
+
 }
 
-.slide-in-skills {
+#scroll-text {
   display: flex;
   flex-wrap: nowrap;
-  animation: slide-in 60s linear infinite;
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 60s linear infinite;
+  -webkit-animation: my-animation 60s linear infinite;
+  animation: my-animation 60s linear infinite;
 }
 
-.slide-in-skills p {
-  margin-right: 20px;
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
 }
 
-@keyframes slide-in {
-  0% {
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
-  100% {
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }

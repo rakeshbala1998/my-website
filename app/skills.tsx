@@ -2,20 +2,6 @@ import { useEffect, useRef } from "react";
 import "./slide-in.css";
 
 const Skills = () => {
-  const skillsRef = useRef(null);
-
-  useEffect(() => {
-    const skills = skillsRef.current.childNodes;
-    const numSkills = skills.length;
-
-    for (let i = 0; i < numSkills; i++) {
-      const skill = skills[i];
-      if (skill.nodeType === 1) {
-        skill.style.animationDelay = `${i * 0.2}s`;
-      }
-    }
-
-  }, []);
 
   return (
     <div className="lg:w-screen mb-20">
@@ -24,13 +10,14 @@ const Skills = () => {
           SKILLS
         </div>
         <div
-          ref={skillsRef}
-          className="text-black text-center place-items-center  grid grid-rows-1 font-semibold grid-cols-auto min-content gap-5 slide-in-skills"
-          style={{
+        id="scroll-container"
+        className="text-black text-center place-items-center  grid grid-rows-1 font-semibold grid-cols-auto min-content gap-5 slide-in-skills"
+        style={{
             gridTemplateColumns: "repeat(auto-fit, minmax(10rem, 1fr))",
             overflow: "hidden",
           }}
-        >
+        > 
+        <div id="scroll-text" className="gap-4">
           <p>ANSYS</p>
           <p>AutoCAD</p>
           <p>PTC Creo</p>
@@ -51,7 +38,7 @@ const Skills = () => {
           <p>Deep Learning</p>
           <p>Additive Manufacturing</p>
           <p>Fatigue and Fracture</p>
-          
+          </div>
         </div>
       </div>
     </div>
