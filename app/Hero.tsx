@@ -97,19 +97,20 @@ const Hero = () => {
               {name}
             </div>
           </div>
-          <div className="text-sm md:text-lg text-justify md:p-0 pr-10 pl-10 mb-4 mt-4">
-          I am a <strong>Mechanical Engineer </strong> with a passion for solving <strong>multi-scale multi-physics</strong>{" "}
-          problems using <strong>computational methods</strong> and <strong>experimental methods</strong>.{" "} 
-          My expertise in advanced numerical methods such as <strong>Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), Thermal Analysis and Fluid Structural Interaction (FSI)</strong>
-          , combined with knowledge in <strong>Machine Learning, Deep Learning</strong> and <strong>Computer Vision</strong>, fuels my passion for creating <strong>innovative solutions</strong> for complex problems. 
-          </div>
-          <div className="text-sm md:text-lg text-justify md:p-0 pr-10 pl-10 mb-4 mt-4">
-           My current research interest focuses on fatigue and fractures of materials under various loads, including thermal loading, and developing a{" "}
-          <strong>data-driven computational model (algorithm)</strong> for designing, optimizing topology, optimizing manufacturing methods, and predicting failures of the system.{" "}
-          I am also interested in <strong>probabilistic computational mechanics</strong> and <strong>multi-scale uncertainty quantification and propagation</strong>.
-          As a dedicated <strong>problem solver</strong>, I enjoy <strong>collaborating with others</strong> to deliver <strong>high-quality results</strong> that meet the needs of <strong>modern engineering problems</strong>.
-          </div>
-           
+          <p className="text-sm md:text-lg text-justify md:p-0 pr-10 pl-10 mb-4 mt-4">
+              As a <strong>Mechanical Engineer</strong>, I am deeply passionate about tackling complex <strong>multi-scale</strong> and <strong>multi-physics</strong> problems through a combination of advanced <strong>computational</strong> and <strong>experimental methods</strong>. 
+              My expertise spans a wide array of advanced numerical techniques, including <strong>Finite Element Analysis (FEA)</strong>, <strong>Computational Fluid Dynamics (CFD)</strong>, <strong>Thermal Analysis</strong>, and <strong>Fluid-Structure Interaction (FSI)</strong>. 
+              Additionally, my skills in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> enable me to develop state-of-the-art solutions for challenging engineering issues.
+          </p>
+
+          <p className="text-sm md:text-lg text-justify md:p-0 pr-10 pl-10 mb-4 mt-4">
+              My research interests are diverse and encompass <strong>computational geometry</strong>, <strong>optimization</strong>, and <strong>data-driven models</strong>, including <strong>Physics-Informed Neural Networks (PINNs)</strong>, 
+              <strong>neural operators</strong>, and <strong>Bayesian neural networks</strong>. I am also deeply engaged in <strong>parallel computing</strong> with <strong>GPU technology</strong> and sophisticated <strong>randomized algorithms</strong>. 
+              My focus is on enhancing <strong>design processes</strong>, optimizing <strong>manufacturing techniques</strong>, and improving <strong>failure prediction</strong> through these advanced computational methods. 
+              Additionally, I explore <strong>probabilistic computational mechanics</strong> and <strong>multi-scale uncertainty quantification</strong> to address the complexities of modern engineering challenges. 
+              As a dedicated <strong>problem solver</strong>, I am committed to collaborating with diverse teams to deliver impactful results and push the boundaries of engineering forward.
+          </p>
+
           <div className="flex gap-4 mt-1 justify-center md:justify-start ">
             <button
               className="rounded-full min-w-[10em] h-20 min-h-[4em] relative flex flex-wrap justify-around items-center transition-all bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-size-200 bg-pos-0 hover:bg-pos-100 md:text-xl font-bold"
