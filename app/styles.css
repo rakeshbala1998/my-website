@@ -4,10 +4,8 @@
   transition: all 0.3s ease;
 }
 
-
-
 .image-container:hover img {
-  transform: rotateX(-2deg) rotateY(2deg);
+  transform: rotateX(-5deg) rotateY(5deg);
   
 }
 
@@ -20,6 +18,7 @@
   right: 0;
   bottom: 0;
   pointer-events: none;
+
 }
 
 .image-container::before {

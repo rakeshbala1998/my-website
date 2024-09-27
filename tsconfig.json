@@ -30,6 +30,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "pages/api/contact.js"
-  ],
+, "app/skills.tsx"  ],
   "exclude": ["node_modules"]
 }

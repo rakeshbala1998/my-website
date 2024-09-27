@@ -8,7 +8,7 @@ interface Props {
 }
 const NavBar = ({ isOpen, setIsOpen }: Props) => {
   const resumeUrl =
-    "https://drive.google.com/file/d/1Q6ZGNJ3zFbXhn7C56fdrLeT9XKtoxO8q/view?usp=sharing";
+    "https://drive.google.com/file/d/1-BaYFrC8M7FhLqVhGiUdSB4-aN-Y8oBu/view?usp=drive_link";
 
   const isBrowser = () => typeof window !== "undefined";
   const scrollToTop = () => {

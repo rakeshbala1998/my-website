@@ -1,19 +1,53 @@
 import ProjectCard from "./ProjectCard";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import image1 from "../../public/turbulence_project_presentation.png"
 import image2 from "../../public/ppt_stent.png"
 import image3 from "../../public/STP proj.png"
 import image4 from "../../public/Poster_PRCI2022_V1[1].png"
-import image5 from "../../public/thesis.png"
+import image5 from "../../public/Presentation_Poster.png"
 import image6 from "../../public/ACFD-POSTER.png"
+import spi2 from "../../public/spi2.png"
 
 const Projects = () => {
   return (
     <div className="lg:w-screen mb-20">
       <div className="ml-auto mr-auto min-content  lg:w-8/12 justify-center text-Black p-10">
-        <div className="text-4xl font-bold text-center mb-20">RESEARCH & PROJECTS</div>
-        <div className="grid grid-cols-3 gap-5">
-              <div className="col-span-1 row-span-2">
+        <div className="text-4xl font-bold text-center mb-20 mt-20"> COMPLETED RESEARCHES & PROJECTS</div>
+        <div className="grid grid-cols-2 gap-5">
+                <div className="col-span-3">
+                <ProjectCard
+                  title="Probabilistic Physics-guided Neural Network for Fatigue Prediction of the Additively Manufactured Ti-6Al-4V Alloy"
+                  para1="This paper presents a probabilistic neural network to predict the fatigue life of additively
+                          manufactured Ti-6Al-4V alloys. The network provides accurate fatigue life predictions using
+                          loading parameters and surface roughness features extracted from micro-computed tomography
+                          (CT) scan images. Additionally, the paper outlines a comprehensive methodology for extracting
+                          surface roughness parameters from CT images, enhancing the accuracy and reliability of these
+                          estimations. The physics of the loading and surface roughness parameters are embedded into
+                          the neural network as inequality constraints on the weights and biases. This integration allows
+                          the model to be trained with less data while increasing its generalizability to unforeseen data
+                          beyond the training set. The proposed methodology showed the high prediction accuracy of
+                          fatigue life compared to the conventional neural networks."
+                  skills={["Python,", "TensorFlow,", "OpenCV,","MATLAB,","Scikit-learn,", "Finite Element Analysis," ,"Fatigue Modeling,", "Additive Manufacturing" , "Deep Learning"]}
+                  repoLink=""
+                  paperLink="https://doi.org/10.1016/j.ijfatigue.2024.108167"
+                  image={image5}
+                  isPoster={true}
+                />
+              </div>
+              <div className="col-span-3 row-span-1">
+                <ProjectCard
+                  title="AI-enabled Interactive Threats Detection using"
+                  para1="This project was funded by U.S. DOT Pipeline and Hazardous Materials Safety Admisnistration by several ASU student. In this project, I have developed elastic - plastic FEA 
+                  model with above given specification. After Validation against the experimental data, the model was used to conduct the parametric study with interactive corrosion pits. This model gave accurate 
+                  prediction than the ASME B31G."
+                  para2="The predicted point cloud data obtained from the neural network was used to create the pipeline model with actual surface circumference and performed FEA analysis for burst pressure prediction.
+                  This is project really helped me to learn new things such as handling sparse data, data augmentation, etc"
+                  skills={["Python,", "ANSYS,", "Finite Element Analysis"]}
+                  paperLink="https://primis.phmsa.dot.gov/matrix/FilGet.rdm?fil=17671"
+                  image={image4}
+                />
+              </div>
+              <div className="col-span-3 ">
                 <ProjectCard
                   title="Turbulence Model for Backward-stepping face"
                   para1="The flow is simulated as the nominally 2D flow over a backward-facing step. This simulation was only the case of a straight top wall.
@@ -55,29 +89,8 @@ const Projects = () => {
                   />
                 </div>
               </div>
-              <div className="col-span-3 row-span-1">
-                <ProjectCard
-                  title="AI-enabled Interactive Threats Detection using"
-                  para1="This project was funded by U.S. DOT Pipeline and Hazardous Materials Safety Admisnistration by several ASU student. In this project, I have developed elastic - plastic FEA 
-                  model with above given specification. After Validation against the experimental data, the model was used to conduct the parametric study with interactive corrosion pits. This model gave accurate 
-                  prediction than the ASME B31G."
-                  para2="The predicted point cloud data obtained from the neural network was used to create the pipeline model with actual surface circumference and performed FEA analysis for burst pressure prediction.
-                  This is project really helped me to learn new things such as handling sparse data, data augmentation, etc"
-                  skills={["Python,", "ANSYS,", "Finite Element Analysis"]}
-                  repoLink="https://primis.phmsa.dot.gov/matrix/FilGet.rdm?fil=17671"
-                  image={image4}
-                />
-              </div>
-              <div className="col-span-3 row-span-1">
-                <ProjectCard
-                  title="Machine Learning for Predicting Crack Initiation Sites in Additively Manfactured Titanium Alloy"
-                  para1="This research focuses on finding the crack initiation sites using data obtained from the CT scan images registered inbetween uniaxial fatigue loading."
-                  para2="The obtained CT scan images are processed to remove the noises and high quality STL files were produced."
-                  skills={["Python,", "TensorFlow,", "OpenCV,","MATLAB,","Scikit-learn,", "Finite Element Analysis," ,"Fatigue Modeling,", "Additive Manufacturing" ]}
-                  repoLink=""
-                  image={image5}
-                />
-              </div>
+
+
               <div className="col-span-3 row-span-1">
                 <ProjectCard
                   title="Computational Analysis of Various Flow"

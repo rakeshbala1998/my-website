@@ -8,6 +8,8 @@ import NavBar from "./(navbar)/Navbar";
 import Footer from "./Footer";
 import SideBar from "./(navbar)/Sidebar";
 import { useState } from "react";
+import CurrentProjects from "./(projects)/currentproject";
+
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,22 +18,39 @@ const Home = () => {
     <>
       <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
       <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
-      <section id="hero">
+
+      {/* Hero Section */}
+      <section id="hero" className="pb-8">  {/* Add padding-bottom */}
         <Hero />
       </section>
-      <section id="Skills">
+
+      {/* Skills Section */}
+      <section id="skills" className="mt-8">  {/* Add margin-top */}
         <Skills />
       </section>
-      <section id="projects">
+
+      {/* Projects Section */}
+      <section id="CurrentProjects" className="mt-8">
+        <CurrentProjects/>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="mt-8">
         <Projects />
       </section>
-      <section id="work">
+
+      {/* Work Section */}
+      <section id="work" className="mt-8">
         <Work />
       </section>
-      <section id="contact">
+
+      {/* Contact Section */}
+      <section id="contact" className="mt-8">
         <Contact />
       </section>
-      <section id="contact">
+
+      {/* Footer Section */}
+      <section id="footer" className="mt-8">
         <Footer />
       </section>
     </>

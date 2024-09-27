@@ -1,0 +1,39 @@
+.collapsible-container {
+    max-width: 400px; /* Set a maximum width for the container */
+    margin: auto; /* Center the container */
+    overflow: hidden; /* Prevent overflow */
+    transition: height 0.3s ease; /* Smooth transition */
+    border-radius: 20px; /* Round corners for the entire container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+
+}
+
+.image-container {
+    perspective: 1000px; /* Increased perspective for a more dramatic effect */
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    
+}
+
+.image-container img {
+    border-radius: 20px; /* Maintain consistent rounding */
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition */
+    
+}
+
+.collapsible-container:hover .image-container {
+    transform: rotateY(10deg); /* Rotate slightly on hover */
+}
+
+.collapsible-container:hover .image-container img {
+    transform: scale(1.05); /* Slightly zooms the image on hover */
+}
+
+.text-container {
+    padding: 10px; /* Add padding to the text */
+    background: transparent; /* Background color for the text area */
+    border-radius: 0 0 20px 20px; /* Match bottom corners with the image */
+    
+}

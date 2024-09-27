@@ -6,13 +6,23 @@ export default function Work() {
     <div className="lg:w-screen mb-20">
       <div className="ml-auto mr-auto min-content lg:w-9/12 justify-center text-black p-10">
         <div className="text-4xl font-bold text-center mb-20">
-          WORK EXPERIENCE
+          WORK EXPERIENCES
         </div>
         <div className="grid grid-rows-1 grid-cols-1 lg:grid-cols-3 gap-20">
           <WorkCard
-            position="Research Serive Aide"
+              position="Graduate Researcher"
+              company="Arizona State University"
+              dates="09/2022 - 08/2023"
+              companyUrl="https://www.asu.edu/"
+              responsiblities={[
+                "Processed micro-CT images of additively manufactured(AM) titanium alloy and acquired microscale data on surface roughness and internal defects.",
+                "Proposed a machine learning model for fatigue crack initiation sites prediction and a probabilistic physics-guided neural network using extracted microscale data features for fatigue life estimation."
+                ]}
+            />
+          <WorkCard
+            position="Research Service Aide"
             company="Arizona State University"
-            dates="09/2022 - Present"
+            dates="09/2022 - 08/2023"
             companyUrl="https://www.asu.edu/"
             responsiblities={[
               "Organized and facilitated a seminar series on Advanced Air Mobility, with an average attendance of 40 per session.",
@@ -22,7 +32,7 @@ export default function Work() {
           <WorkCard
             position="Teaching Aide"
             company="Arizona State University"
-            dates="09/2022 - Present"
+            dates="09/2022 - 08/2023"
             companyUrl="https://www.asu.edu/"
             responsiblities={[
               "Taught fundamental concepts and experiments of physics to undergraduate students and graded lab reports of 100 students.",
@@ -40,8 +50,8 @@ export default function Work() {
           />
           <WorkCard
             position="Graduate Research Volunteer"
-            company="Prognostic Analysis and Reliability Assessment(PARA) Lab, ASU"
-            dates="02/2019 - 09/2019"
+            company="PARA Lab, ASU"
+            dates="09/2021 - 08/2022"
             companyUrl="https://paralab.engineering.asu.edu/"
             responsiblities={[
               "Conducted a parametric study on the X65 gas pipeline with interactive corrosion threats using elastic-plastic FEA models; produced more accurate results than ASME B31G.",
@@ -53,7 +63,7 @@ export default function Work() {
            <WorkCard
             position="Founder"
             company="Raki Traders"
-            dates="07/2020 - 08/2021"
+            dates="06/2020 - 08/2021"
             companyUrl=""
             responsiblities={[
               "Administrated all organization operations, such as making policies, managing inventory, and controlling prices leading to increased returns of 1.1 million per month.",
