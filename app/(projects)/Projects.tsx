@@ -27,6 +27,7 @@ const Projects = () => {
                           the model to be trained with less data while increasing its generalizability to unforeseen data
                           beyond the training set. The proposed methodology showed the high prediction accuracy of
                           fatigue life compared to the conventional neural networks."
+                  para2=""
                   skills={["Python,", "TensorFlow,", "OpenCV,","MATLAB,","Scikit-learn,", "Finite Element Analysis," ,"Fatigue Modeling,", "Additive Manufacturing" , "Deep Learning"]}
                   repoLink=""
                   paperLink="https://doi.org/10.1016/j.ijfatigue.2024.108167"

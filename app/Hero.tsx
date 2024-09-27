@@ -37,37 +37,39 @@ const Hero = () => {
   };
 
   const [name, setName] = useState(ogName);
-
   useEffect(() => {
     const interval = setInterval(() => {
-      i.current = (i.current + 1) % salutations.length;
-      setSalutation(salutations[i.current]);
+        i.current = (i.current + 1) % salutations.length;
+        setSalutation(salutations[i.current]);
     }, 2000);
 
     return () => clearInterval(interval);
-  }, [salutation]);
+}, [salutations]);  // Updated dependency
 
   const hackerEffect = () => {
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let i = 0;
-    const interval = setInterval(() => {
-      setName(
-        name
-          .split("")
-          .map((letter, idx) => {
-            if (idx <= i) return ogName[idx];
-            if (letter !== " ") return letters[Math.floor(Math.random() * 26)];
-            return " ";
-          })
-          .join("")
-      );
+      if (name === ogName) { // Prevent setting a new interval if the name is already revealed
+          const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+          let i = 0;
+          const interval = setInterval(() => {
+              setName(
+                  name
+                      .split("")
+                      .map((letter, idx) => {
+                          if (idx <= i) return ogName[idx];
+                          if (letter !== " ") return letters[Math.floor(Math.random() * 26)];
+                          return " ";
+                      })
+                      .join("")
+              );
 
-      i += 1 / 3;
-      if (i >= name.length) {
-        clearInterval(interval);
+              i += 1 / 3;
+              if (i >= name.length) {
+                  clearInterval(interval);
+              }
+          }, 30);
       }
-    }, 30);
   };
+
 
   return (
     <div className="h-screen w-full flex flex-col md:flex-row">
