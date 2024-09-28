@@ -44,7 +44,7 @@ const Hero = () => {
     }, 2000);
 
     return () => clearInterval(interval);
-}, [salutations]);  // Updated dependency
+}, []);  // Updated dependency
 
   const hackerEffect = () => {
       if (name === ogName) { // Prevent setting a new interval if the name is already revealed
@@ -94,7 +94,7 @@ const Hero = () => {
           </div>
         </div>
         <p className="text-sm md:text-lg text-justify md:p-0 pr-10 pl-10 mb-4 mt-4">
-          I am a <strong>Mechanical Engineer</strong>, currently pursuing <strong>Doctrol</strong> degree at University of Connecticut. I am deeply passionate about tackling complex <strong>multi-scale</strong> and <strong>multi-physics</strong> problems through a combination of advanced <strong>computational</strong> and <strong>experimental methods</strong>.
+          I am a <strong>Mechanical Engineer</strong>, currently pursuing <strong>Doctoral</strong> degree at University of Connecticut. I am deeply passionate about tackling complex <strong>multi-scale</strong> and <strong>multi-physics</strong> problems through a combination of advanced <strong>computational</strong> and <strong>experimental methods</strong>.
           My expertise spans a wide array of advanced numerical techniques, including <strong>Finite Element Analysis (FEA)</strong>, <strong>Computational Fluid Dynamics (CFD)</strong>, <strong>Thermal Analysis</strong>, and <strong>Fluid-Structure Interaction (FSI)</strong>.
           Additionally, my skills in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> enable me to develop state-of-the-art solutions for challenging engineering problems.
         </p>
