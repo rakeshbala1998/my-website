@@ -44,7 +44,7 @@ const Hero = () => {
     }, 2000);
 
     return () => clearInterval(interval);
-}, []);  // Updated dependency
+}, [salutations]);  // Updated dependency
 
   const hackerEffect = () => {
       if (name === ogName) { // Prevent setting a new interval if the name is already revealed
