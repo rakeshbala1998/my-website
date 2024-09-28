@@ -1,3 +1,5 @@
+import React from "react";
+
 interface Props {
   isOpen: boolean;
   setIsOpen: any;
@@ -8,7 +10,7 @@ const SideBar = ({ isOpen, setIsOpen }: Props) => {
 
   const scrollToSection = (id: string) => {
     if (!isBrowser()) return;
-    let ele = document.getElementById(id);
+    const ele = document.getElementById(id);
     if (ele) {
       document.body.scrollTo({ top: ele.offsetTop, behavior: "smooth" });
     }
@@ -22,6 +24,7 @@ const SideBar = ({ isOpen, setIsOpen }: Props) => {
     { name: "Work Experience", id: "work" },
     { name: "Contact", id: "contact" },
   ];
+
   return (
     <div
       className={`w-screen h-screen transition-all absolute ${
@@ -35,9 +38,9 @@ const SideBar = ({ isOpen, setIsOpen }: Props) => {
             : "invisible translate-x-[200%]"
         }`}
       >
-        <ul className=" h-2/6 flex flex-col justify-between">
+        <ul className="h-2/6 flex flex-col justify-between">
           {items.map((item, i) => (
-            <li className="hover:font-bold hover:text-blue-500 transition duration-200">
+            <li key={item.id} className="hover:font-bold hover:text-blue-500 transition duration-200">
               <button onClick={() => scrollToSection(item.id)}>
                 {item.name}
               </button>

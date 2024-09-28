@@ -67,7 +67,7 @@ const CurrentProjects = () => {
               Attention Aware Physics Guided Neural Network
             </h3>
             <p className="text-base text-justify">
-              Our research focuses on developing an attention-aware physics-guided neural network designed to predict fatigue in additively manufactured components. By integrating fundamental physical principles with advanced image modalities, we aim to significantly enhance predictive accuracy and improve interpretability of the model's predictions.
+              Our research focuses on developing an attention-aware physics-guided neural network designed to predict fatigue in additively manufactured components. By integrating fundamental physical principles with advanced image modalities, we aim to significantly enhance predictive accuracy and improve interpretability of the model&apos;s predictions.
             </p>
           </div>
 
