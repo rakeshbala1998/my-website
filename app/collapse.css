@@ -5,6 +5,8 @@
     overflow: hidden; /* Prevent overflow */
     padding: 0 5%; /* Use relative padding */
     max-width: 10000px; /* Set a max width for the entire container */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 .image-container {
