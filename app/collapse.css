@@ -1,18 +1,19 @@
 .collapsible-container {
-    max-width: 400px; /* Set a maximum width for the container */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Default to column layout for smaller screens */
     margin: auto; /* Center the container */
     overflow: hidden; /* Prevent overflow */
-    transition: height 0.3s ease; /* Smooth transition */
-    border-radius: 20px; /* Round corners for the entire container */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-
+    padding: 0 5%; /* Use relative padding */
+    max-width: 10000px; /* Set a max width for the entire container */
 }
 
 .image-container {
     perspective: 1000px; /* Increased perspective for a more dramatic effect */
     transition: transform 0.3s ease;
     border-radius: 20px;
-    
+    flex: 1; /* Allow image container to grow */
+    max-width: 700px; /* Set a max width for the image container */
+    width: 100%; /* Make it responsive */
 }
 
 .image-container img {
@@ -20,7 +21,6 @@
     width: 100%; /* Make image responsive */
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease; /* Smooth transition */
-    
 }
 
 .collapsible-container:hover .image-container {
@@ -35,5 +35,22 @@
     padding: 10px; /* Add padding to the text */
     background: transparent; /* Background color for the text area */
     border-radius: 0 0 20px 20px; /* Match bottom corners with the image */
-    
+    flex: 1; /* Allow text container to take available space */
+}
+
+/* Media Query for larger screens */
+@media (min-width: 1900px) {
+    .collapsible-container {
+        flex-direction: row; /* Change to row layout on larger screens */
+    }
+    .image-container {
+        margin-right: 10px; /* Optional: Add spacing between the image and text */
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .image-container img {
+        max-width: 400px; /* Set max width for small screens */
+    }
 }

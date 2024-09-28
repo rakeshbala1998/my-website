@@ -17,7 +17,8 @@ const SideBar = ({ isOpen, setIsOpen }: Props) => {
   const items = [
     { name: "Home", id: "hero" },
     { name: "Skills", id: "skills" },
-    { name: "Projects", id: "projects" },
+    { name: "Current Projects", id: "CurrentProjects" },
+    { name: "Completed Projects", id: "projects" },
     { name: "Work Experience", id: "work" },
     { name: "Contact", id: "contact" },
   ];
@@ -36,7 +37,7 @@ const SideBar = ({ isOpen, setIsOpen }: Props) => {
       >
         <ul className=" h-2/6 flex flex-col justify-between">
           {items.map((item, i) => (
-            <li key={i} className="hover:scale-110 hover:translate-x-20">
+            <li className="hover:font-bold hover:text-blue-500 transition duration-200">
               <button onClick={() => scrollToSection(item.id)}>
                 {item.name}
               </button>

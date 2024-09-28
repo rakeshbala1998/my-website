@@ -72,49 +72,49 @@ const Hero = () => {
 
 
   return (
-    <div className="h-screen w-full flex flex-col md:flex-row">
-      <div className="image-container w-full md:w-3/12 flex justify-center items-center p-4">
-        <Image
-          priority
-          src={me}
-          className="rounded-3xl w-4/12 md:w-5/12"
-          alt="Rakesh Balamurugan"
-        />
-      </div>
-      <div className="text-container w-full md:w-9/12 flex flex-col justify-center text-left px-8 md:px-10 bg-transparent"> {/* Increased padding */}
-        <div>
-          <div className="md:text-lg text-sm pl-0 mt-5 md:mt-5 md:pl-7 md:mb-0 md:pb-0">
-            {salutation}
+      <div className="collapsible-container">
+        <div className="image-container w-full md:w-3/12 flex justify-center items-center p-4">
+          <Image
+            priority
+            src={me}
+            className="rounded-3xl w-4/12 md:w-5/12"
+            alt="Rakesh Balamurugan"
+          />
+        </div>
+        <div className="text-container w-full md:w-9/12 flex flex-col justify-center text-left px-8 md:px-10 bg-transparent"> {/* Increased padding */}
+          <div>
+            <div className="md:text-lg text-sm pl-0 mt-5 md:mt-5 md:pl-7 md:mb-0 md:pb-0">
+              {salutation}
+            </div>
+            <div
+              className="text-[5vw] md:text-[5rem] text-5xl font-bold mt-0 pt-0 font-mono"
+              onMouseEnter={hackerEffect}
+            >
+              {name}
+            </div>
           </div>
-          <div
-            className="md:text-[8rem] text-5xl font-bold mt-0 pt-0 font-mono"
-            onMouseEnter={hackerEffect}
-          >
-            {name}
+          <p className="text-sm md:text-lg text-justify md:p-0 pr-10 pl-10 mb-4 mt-4">
+            I am a <strong>Mechanical Engineer</strong>, currently pursuing <strong>Doctoral</strong> degree at University of Connecticut. I am deeply passionate about tackling complex <strong>multi-scale</strong> and <strong>multi-physics</strong> problems through a combination of advanced <strong>computational</strong> and <strong>experimental methods</strong>.
+            My expertise spans a wide array of advanced numerical techniques, including <strong>Finite Element Analysis (FEA)</strong>, <strong>Computational Fluid Dynamics (CFD)</strong>, <strong>Thermal Analysis</strong>, and <strong>Fluid-Structure Interaction (FSI)</strong>.
+            Additionally, my skills in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> enable me to develop state-of-the-art solutions for challenging engineering problems.
+          </p>
+          <p className="text-sm md:text-lg text-justify md:p-0 pr-10 pl-10 mb-4 mt-4">
+            My research interests are diverse and encompass <strong>computational geometry</strong>, <strong>optimization</strong>, and <strong>data-driven models</strong>, including <strong>Physics-Informed Neural Networks (PINNs)</strong>,
+            <strong> Neural Operators</strong>, and <strong>Bayesian Neural Networks</strong>. I am also deeply engaged in <strong>Parallel Computing</strong> with <strong>GPU </strong>technology and sophisticated <strong>randomized algorithms</strong>.
+            My focus is on optimizing <strong>design processes</strong> and <strong>manufacturing techniques</strong>, and improving <strong>failure prediction</strong> through these advanced computational methods.
+            Additionally, I explore <strong>probabilistic computational mechanics</strong> and <strong>multi-scale uncertainty quantification</strong> to address the complexities of modern engineering challenges.
+            As a dedicated <strong>problem solver</strong>, I am committed to collaborating with diverse teams to deliver impactful results and push the boundaries of engineering forward.
+          </p>
+          <div className="flex gap-4 mt-4 justify-center">
+            <button
+              className="rounded-full min-w-[10em] h-20 min-h-[4em] relative flex flex-wrap justify-around items-center transition-all bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-size-200 bg-pos-0 hover:bg-pos-100 md:text-xl font-bold"
+              onClick={() => scrollToSection()}
+            >
+              Get In Touch
+            </button>
           </div>
         </div>
-        <p className="text-sm md:text-lg text-justify md:p-0 pr-10 pl-10 mb-4 mt-4">
-          I am a <strong>Mechanical Engineer</strong>, currently pursuing <strong>Doctoral</strong> degree at University of Connecticut. I am deeply passionate about tackling complex <strong>multi-scale</strong> and <strong>multi-physics</strong> problems through a combination of advanced <strong>computational</strong> and <strong>experimental methods</strong>.
-          My expertise spans a wide array of advanced numerical techniques, including <strong>Finite Element Analysis (FEA)</strong>, <strong>Computational Fluid Dynamics (CFD)</strong>, <strong>Thermal Analysis</strong>, and <strong>Fluid-Structure Interaction (FSI)</strong>.
-          Additionally, my skills in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, and <strong>Computer Vision</strong> enable me to develop state-of-the-art solutions for challenging engineering problems.
-        </p>
-        <p className="text-sm md:text-lg text-justify md:p-0 pr-10 pl-10 mb-4 mt-4">
-          My research interests are diverse and encompass <strong>computational geometry</strong>, <strong>optimization</strong>, and <strong>data-driven models</strong>, including <strong>Physics-Informed Neural Networks (PINNs)</strong>,
-          <strong> Neural Operators</strong>, and <strong>Bayesian Neural Networks</strong>. I am also deeply engaged in <strong>Parallel Computing</strong> with <strong>GPU </strong>technology and sophisticated <strong>randomized algorithms</strong>.
-          My focus is on optimizing <strong>design processes</strong> and <strong>manufacturing techniques</strong>, and improving <strong>failure prediction</strong> through these advanced computational methods.
-          Additionally, I explore <strong>probabilistic computational mechanics</strong> and <strong>multi-scale uncertainty quantification</strong> to address the complexities of modern engineering challenges.
-          As a dedicated <strong>problem solver</strong>, I am committed to collaborating with diverse teams to deliver impactful results and push the boundaries of engineering forward.
-        </p>
-        <div className="flex gap-4 mt-4 justify-center">
-          <button
-            className="rounded-full min-w-[10em] h-20 min-h-[4em] relative flex flex-wrap justify-around items-center transition-all bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-size-200 bg-pos-0 hover:bg-pos-100 md:text-xl font-bold"
-            onClick={() => scrollToSection()}
-          >
-            Get In Touch
-          </button>
-        </div>
       </div>
-    </div>
   );
 };
 
